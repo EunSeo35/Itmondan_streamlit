@@ -115,7 +115,7 @@ streamlit==1.40.1
 streamlit-webrtc==0.48.1
 tenacity==9.0.0
 termcolor==2.4.0
-tensorflow == 2.16.0
+tensorflow == 2.15.1
 threadpoolctl==3.5.0
 toml==0.10.2
 tornado==6.4.2

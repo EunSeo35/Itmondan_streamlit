@@ -21,7 +21,7 @@ from email.mime.text import MIMEText
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # FastAPI 서버 주소
-FASTAPI_URL = "http://localhost:8008/predict/"
+FASTAPI_URL = "http://15.168.145.74:8008/predict/"
 
 # 저장 디렉토리
 upload_folder = "uploads"

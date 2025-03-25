@@ -14,8 +14,8 @@ import config
 from config import DB_CONFIG
 
 # 이메일 발송에 사용할 sender 정보
-# sender_email = config.SENDER_EMAIL
-# sender_password = config.SENDER_PASSWORD
+sender_email = st.secrets["email"]["sender_email"]
+sender_password = st.secrets["email"]["sender_password"]
 
 # 파일 저장 경로 설정
 upload_folder = "uploads"

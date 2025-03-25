@@ -134,8 +134,8 @@ def save_to_classification_results(user_id, result, latitude, longitude, audio_p
 def send_email(to_email, subject, message):
     smtp_server = "smtp.gmail.com"
     smtp_port = 587
-    sender_email = config.SENDER_EMAIL
-    sender_password = config.SENDER_PASSWORD
+    sender_email = st.secrets["email"]["sender_email"]
+    sender_password = st.secrets["email"]["sender_password"]
 
     if not sender_email or not sender_password:
         st.error("❌ SENDER_EMAIL 또는 SENDER_PASSWORD가 설정되지 않았습니다!")

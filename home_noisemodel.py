@@ -13,6 +13,7 @@ from streamlit_javascript import st_javascript
 import config
 from config import DB_CONFIG
 
+DB_CONFIG = st.secrets["database"]
 # 이메일 발송에 사용할 sender 정보
 sender_email = st.secrets["email"]["sender_email"]
 sender_password = st.secrets["email"]["sender_password"]

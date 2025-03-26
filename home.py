@@ -25,14 +25,14 @@ class Home_page:
         self.Edit = Edit_page()
 
     def main(self, choose=None):
-        if choose == "홈":  # 메인 홈화면
+        if choose == "홈":
             self.bar()
-        elif choose == "로그인":  # 로그인
+        elif choose == "로그인":
             self.Login.run()
-        elif choose == "회원가입":  # 회원가입
+        elif choose == "회원가입":
             self.Signup.run()
-        elif choose == "마이페이지":  # 마이페이지 선택
-            self.Edit.run()  # Mypage_page 실행
+        elif choose == "마이페이지":
+            self.Edit.run()
         elif choose == "로그아웃":
             self.logout()
 

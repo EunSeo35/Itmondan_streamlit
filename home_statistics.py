@@ -157,6 +157,19 @@ class Statistics_page:
             st.warning("선택한 기간 내 데이터가 없습니다.")
             return
         filtered_df = df[df["noise_type"].isin(selected_types)]
+        
+      # 선택된 소음 유형이 데이터프레임에 있는지 확인
+        valid_noise_types = [t for t in selected_types if t in df['noise_type'].unique()]
+
+        if not valid_noise_types:
+            st.warning("선택한 소음 유형에 대한 사용자 측정 기록이 없습니다.")
+            return
+
+        filtered_df = df[df["noise_type"].isin(valid_noise_types)]
+
+        if filtered_df.empty:
+          st.warning("선택하신 조건에 맞는 데이터가 없습니다.")
+          return
 
         with st.expander("📌 한눈에 보는 통계", expanded=True):
             col1, col2, col3 = st.columns(3)

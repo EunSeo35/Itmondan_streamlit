@@ -137,7 +137,7 @@ class Statistics_page:
 
     # 통계 페이지의 메인 함수 (웹 UI 구성)
     def statistics_page(self):
-        user_id = st.session_state['user_info']['username']
+        user_id = st.session_state['user_info']['id']
 
         with st.expander("🔍 데이터 필터 설정", expanded=True):
             col1, col2 = st.columns(2)

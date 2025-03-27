@@ -1,7 +1,6 @@
 import streamlit as st
 import mysql.connector
 from config import DB_CONFIG
-import uuid
 
 class Edit_page:
     def __init__(self):

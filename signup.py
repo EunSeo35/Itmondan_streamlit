@@ -76,7 +76,7 @@ class Signup_page():
         except Error as e:
             st.error(f"DB 연결 오류: {e}")
             self.db_connection = None
-        
+    
     def save_to_db(self, user_info):
         if self.db_connection:
             cursor = self.db_connection.cursor()

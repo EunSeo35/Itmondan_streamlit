@@ -597,7 +597,7 @@ class NoiseModel_page:
                 st.session_state['sos_email_enabled'] = st.toggle(
                     "📧 SOS 메시지 발송", 
                     value=st.session_state['sos_email_enabled'], 
-                    help="경고 후 1분간 반응이 없으면 SOS 메시지가 발송됩니다."
+                    help="경고 후 1분간 응답이 없으면 보호자 이메일로 SOS 메시지가 발송됩니다."
                 )
             st.divider()
 
